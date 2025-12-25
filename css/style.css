@@ -1,0 +1,277 @@
+:root {
+    --primary: #0f2a44;
+    --secondary: #1f6fd2;
+    --background: #f5f7fa;
+    --text: #333;
+    --white: #ffffff;
+}
+
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Layout */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Header: Hintergrund wie bisher */
+header {
+    background: linear-gradient(135deg, var(--primary), #163b5d);
+    color: var(--white);
+    text-align: left; /* Text links */
+    padding: 20px 0;
+}
+
+/* Flexbox für Container im Header */
+.header-flex {
+    display: flex;
+    justify-content: space-between; /* Text links, Logo rechts */
+    align-items: center;
+}
+
+/* Logo anpassen */
+.header-logo img {
+    max-height: 80px;
+    width: auto;
+}
+
+/* Subtitle */
+.subtitle {
+    margin: 20px 0 0 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+}
+
+/* Navigation */
+nav {
+    background: var(--white);
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background: var(--white);
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+}
+
+/* Intro */
+.intro {
+    text-align: center;
+}
+
+/* Services */
+.services-preview {
+    background: var(--white);
+    padding-bottom: 100px; /* mehr Weißraum nach unten */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: var(--background);
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.center {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+/* CTA boxed */
+.cta {
+    text-align: center;
+}
+
+.cta-boxed {
+    background: transparent;
+    padding: 80px 20px;
+}
+
+.cta-boxed .container {
+    background: rgba(31, 111, 210, 0.08);
+    border: 1px solid rgba(31, 111, 210, 0.25);
+    border-radius: 16px;
+    padding: 60px 40px;
+    max-width: 900px;
+    backdrop-filter: blur(4px);
+}
+
+/* Footer */
+footer {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+footer h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+footer p,
+footer a {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+footer a {
+    color: #cfe4ff;
+    text-decoration: none;
+}
+
+/* About – Schwerpunkte modern */
+.about-skills {
+    background: var(--white);
+    padding: 80px 0;
+}
+
+.skill-card {
+    text-align: left;
+}
+
+.skill-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.skill-card p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+/* Profilbild */
+.about-image {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.profile-image {
+    max-width: 260px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Karten-Layout für E-Mail, Telefon, Terminvereinbarung */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    border: 2px solid #007BFF; /* sichtbare Umrandung */
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Container für die Icons - horizontal und vertikal zentriert */
+.icons-section {
+    display: flex;
+    justify-content: center; /* horizontal zentrieren */
+    align-items: center;     /* vertikal zentrieren, falls nötig */
+    margin: 40px 0;          /* Abstand oben/unten */
+    min-height: 150px;       /* optional: Mindesthöhe, damit vertikal zentriert */
+}
+
+/* Box für die Icons */
+.icon-box {
+    display: flex;
+    gap: 20px;
+    padding: 15px 25px;
+    border: 2px solid #007BFF;
+    border-radius: 12px;
+    max-width: 50%;          /* halb so breit wie die Seite */
+    justify-content: center;  /* Icons innerhalb der Box zentrieren */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Icons selbst */
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Icon + Überschrift in Cards */
+.card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
