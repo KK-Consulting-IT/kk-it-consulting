@@ -275,3 +275,19 @@ footer a {
     height: 22px;
     flex-shrink: 0;
 }
+
+/* Responsive Header für Handys */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem; /* passt die Hauptüberschrift an */
+    }
+
+    header .subtitle {
+        font-size: 0.9rem; /* passt Untertitel an */
+    }
+
+    header a.btn-primary {
+        padding: 8px 16px; /* Button etwas kleiner */
+        font-size: 0.9rem;
+    }
+}
