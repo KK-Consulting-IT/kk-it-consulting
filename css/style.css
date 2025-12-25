@@ -277,13 +277,13 @@ footer a {
 }
 
 /* Responsive Header für Handys */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     header h1 {
-        font-size: 1.8rem; /* passt die Hauptüberschrift an */
+        font-size: 1.3rem; /* passt die Hauptüberschrift an */
     }
 
     header .subtitle {
-        font-size: 0.9rem; /* passt Untertitel an */
+        font-size: 0.75rem; /* passt Untertitel an */
     }
 
     header a.btn-primary {
@@ -291,3 +291,4 @@ footer a {
         font-size: 0.9rem;
     }
 }
+
