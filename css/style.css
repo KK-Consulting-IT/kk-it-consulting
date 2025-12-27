@@ -293,10 +293,15 @@ footer a {
         font-size: 0.75rem; /* passt Untertitel an */
     }
 
+    header .subtitle2 {
+        font-size: 0.7rem; /* passt Untertitel2 an */
+    }
+
     header a.btn-primary {
         padding: 8px 16px; /* Button etwas kleiner */
         font-size: 0.9rem;
     }
 }
+
 
 
