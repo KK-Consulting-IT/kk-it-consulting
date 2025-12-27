@@ -301,7 +301,13 @@ footer a {
         padding: 8px 16px; /* Button etwas kleiner */
         font-size: 0.9rem;
     }
+
+    .service-orte {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
 }
+
 
 
 
