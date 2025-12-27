@@ -294,7 +294,7 @@ footer a {
     }
 
     header .subtitle2 {
-        font-size: 0.3rem; /* passt Untertitel2 an */
+        font-size: 0.27rem; /* passt Untertitel2 an */
     }
 
     header a.btn-primary {
@@ -307,6 +307,7 @@ footer a {
         line-height: 1.4;
     }
 }
+
 
 
 
