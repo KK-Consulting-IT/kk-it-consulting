@@ -55,6 +55,13 @@ header {
     opacity: 0.9;
 }
 
+/* Subtitle2 */
+.subtitle2 {
+    margin: 5px 0 0 0;
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
 }
 
 /* Navigation */
@@ -291,4 +298,5 @@ footer a {
         font-size: 0.9rem;
     }
 }
+
 
